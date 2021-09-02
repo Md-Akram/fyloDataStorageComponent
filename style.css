@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+  --PaleBlue: hsl(243, 100%, 93%);
+  --GrayishBlue: hsl(229, 7%, 55%);
+  --DarkBlue: hsl(228, 56%, 26%);
+  --VeryDarkBlue: hsl(229, 57%, 11%);
+}
+
+* {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.card {
+  background-color: var(--DarkBlue);
+  margin: 20px;
+  padding: 30px;
+  border-radius: 10px;
+}
+.card-1 {
+  border-top-right-radius: 80px;
+}
+.card-1 > img {
+  margin-top: 40px;
+}
+.card-1 * {
+  margin: 10px;
+}
+
+.icons > img {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background-color: var(--VeryDarkBlue);
+  border-radius: 10px;
+  margin: 0px;
+  margin-right: 2px;
+}
+
+.card-2 {
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.bold {
+  font-weight: bold;
+}
+.card-2 > p {
+  margin: 10px 0;
+}
+.progress-bar {
+  width: 100%;
+  height: 25px;
+  background-color: var(--VeryDarkBlue);
+  border-radius: 20px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 5px;
+}
+.progress {
+  width: 81.5%;
+  height: 15px;
+  background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  margin-left: 7px;
+  position: relative;
+}
+.ball {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  bottom: 2px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+}
+
+.smalls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.left {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 35px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.left > span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 769px) {
+  .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .card-1 {
+    width: 30%;
+    padding: 10px;
+  }
+  .card-2 {
+    width: 55%;
+  }
+  .smalls {
+    margin-bottom: 0;
+  }
+}
